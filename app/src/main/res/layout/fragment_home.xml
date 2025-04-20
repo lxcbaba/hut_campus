@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_latest"
+                android:text="二手"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/jiaoy"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_confession"
+                android:text="交友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/jiaoyou"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_purchase"
+                android:text="拼团"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+               android:drawableLeft="@mipmap/paotui"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_internship"
+                android:text="跑腿"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/paotui"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- RecyclerView for posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
