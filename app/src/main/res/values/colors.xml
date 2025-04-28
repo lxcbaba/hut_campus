@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="select_color">#065EBD</color>
     <color name="nuselect_color">#BF1F26</color>
+    <color name="bg_login">	#E7EEF2</color>
 </resources>

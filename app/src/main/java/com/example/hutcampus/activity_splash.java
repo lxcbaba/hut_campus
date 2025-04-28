@@ -25,7 +25,7 @@ public class activity_splash extends AppCompatActivity {
             @Override
             public void run() {
                 // 跳转到主页面
-                Intent mainIntent = new Intent(activity_splash.this, MainActivity.class);
+                Intent mainIntent = new Intent(activity_splash.this, activity_login.class);
                 startActivity(mainIntent);
                 finish(); // 关闭当前Activity，避免返回时再次看到启动页
             }
